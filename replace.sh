@@ -5,8 +5,9 @@ branch="dev"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo $commit_id_latest
 
-old_commit_id=$(</home/amitayare/file1.txt) 
+old_commit_id=$(<file1.txt) 
 
+echo " commit old $old_commit_id "
 
 if [ $new_commit_id == $old_commit_id ];
 
@@ -28,7 +29,7 @@ else
 #testing
 
 commit_save=$new_commit_id
-echo $new_commit_id > /home/amitayare/file1.txt 
+echo $new_commit_id > file1.txt 
 echo $commit_save
 
 fi
