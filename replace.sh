@@ -11,9 +11,9 @@ old_commit_id=$(</home/amitayare/file1.txt)
 if [ $new_commit_id == $old_commit_id ];
 
 then 
-	echo " NO new commits "
+	echo " NO NEW COMMIT  "
 else
-	echo " new commit id is FOUND "
+	echo " FOUND : NEW COMMIT  "
 	
 	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
 	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
