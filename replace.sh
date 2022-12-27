@@ -7,7 +7,7 @@ new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo " new_commit_id: $new_commit_id"
 
 old_commit_id=$(</var/www/html/task/file1.txt) 
-
+git branch
 echo " commit old: $old_commit_id "
 
 if [ $new_commit_id == $old_commit_id ];
@@ -20,12 +20,13 @@ else
 #	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
 #	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
 	
-	git add --all
-	git commit -m " COMMIT CODE "
+#	git add --all
+#	git commit -m " COMMIT CODE "
 #	git push origin test
 	
 #	git checkout test
-	git merge dev
+git branch
+git merge dev
 
 #testing
 
