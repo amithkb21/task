@@ -2,12 +2,13 @@
 
 origin="origin"
 branch="dev"
+
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
-echo $commit_id_latest
+echo " new_commit_id: $new_commit_id"
 
-old_commit_id=$(<file1.txt) 
+old_commit_id=$(</var/www/html/task/file1.txt) 
 
-echo " commit old $old_commit_id "
+echo " commit old: $old_commit_id "
 
 if [ $new_commit_id == $old_commit_id ];
 
