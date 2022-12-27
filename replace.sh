@@ -17,16 +17,16 @@ then
 else
 	echo " FOUND  NEW COMMIT  "
 	
-#	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
-#	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
+	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
+	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
 	
 #	git add --all
 #	git commit -m " COMMIT CODE "
 #	git push origin test
 	
 #	git checkout test
-git branch
-git merge dev
+	git branch
+	git merge dev
 
 #testing
 
