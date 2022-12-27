@@ -17,8 +17,10 @@ then
 else
 	echo " FOUND  NEW COMMIT  "
 	
-	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
-	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
+	
+	
+#	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
+#	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
 	
 #	git add --all
 #	git commit -m " COMMIT CODE "
@@ -35,4 +37,3 @@ echo $new_commit_id > file1.txt
 echo $commit_save
 
 fi
-
