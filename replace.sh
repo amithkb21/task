@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 origin="origin"
 branch="deploy"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
